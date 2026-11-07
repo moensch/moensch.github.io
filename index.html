@@ -4,9 +4,9 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Samuel Suter — moensch</title>
-	<meta name="description" content="Samuel Suter (moensch) — DevTestOps guy.">
+	<meta name="description" content="Samuel Suter (moensch) — Internal Developer Platform lead at Upstart, Denver CO.">
 	<meta property="og:title" content="Samuel Suter — moensch">
-	<meta property="og:description" content="DevTestOps guy.">
+	<meta property="og:description" content="Internal Developer Platform lead at Upstart, Denver CO.">
 	<meta property="og:url" content="https://moens.ch/">
 	<meta name="color-scheme" content="light dark">
 	<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%2314b8a6'/><text x='16' y='22.5' font-family='monospace' font-size='17' font-weight='700' text-anchor='middle' fill='white'>s_</text></svg>">
@@ -115,6 +115,26 @@
 			font: 500 13px/1.4 "JetBrains Mono", ui-monospace, monospace;
 		}
 
+		.bio {
+			margin-top: 18px;
+			color: var(--muted);
+			font-size: 15px;
+		}
+
+		.meta {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 6px 18px;
+			margin-top: 14px;
+			padding: 0;
+			list-style: none;
+			font-size: 14px;
+			font-weight: 600;
+		}
+		.meta li { display: flex; align-items: center; gap: 6px; }
+		.meta svg { width: 15px; height: 15px; fill: var(--muted); }
+		.meta .via { font-weight: 400; color: var(--muted); }
+
 		nav {
 			display: grid;
 			gap: 8px;
@@ -169,7 +189,12 @@
 		<div class="body">
 			<p class="prompt"><b>$</b> whoami <span class="cursor" aria-hidden="true"></span></p>
 			<h1>Samuel Suter</h1>
-			<p class="role">DevTestOps guy</p>
+			<p class="role">Internal Developer Platform lead</p>
+			<p class="bio">Part architect, part right hand. I build the paved roads that let engineering teams ship without thinking about the plumbing.</p>
+			<ul class="meta">
+				<li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 7h-4V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2H4a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2Zm-10-2h4v2h-4V5Z"/></svg>Upstart</li>
+				<li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5Z"/></svg>Denver, CO <span class="via">via 🇨🇭 &amp; 🇬🇧</span></li>
+			</ul>
 
 			<nav aria-label="Profiles">
 				<a href="https://github.com/moensch">
